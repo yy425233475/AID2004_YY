@@ -52,5 +52,6 @@ while True:
         elif event == EPOLLOUT:
             map[fd].send(b'OK')
             ep.unregister(fd)
-            ep.register(fd,EPOLLIN)
+            # ep.register(fd,EPOLLIN)
+            #master 做了修改
 
